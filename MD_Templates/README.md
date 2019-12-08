@@ -13,7 +13,7 @@ requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/si
   * [ r/learnpython/.../SOURCE_NAME ]( SOURCE_URL )
   
 ## Post Title:
-  TEXT
+  > TEXT
   
 ## Post Body:
   > TEXT
@@ -37,7 +37,7 @@ requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/si
   * [ r/learnpython/.../SOURCE_NAME ]( SOURCE_URL )
   
 ## Post Title:
-  TEXT
+  > TEXT
   
 ## Post Body:
   > TEXT
