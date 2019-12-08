@@ -1,6 +1,10 @@
+# noinspection PyPackageRequirements
 import pandas as pd
+# noinspection PyPackageRequirements
 from keras import backend as K
+# noinspection PyPackageRequirements
 from tensorflow.keras.layers import Dense
+# noinspection PyPackageRequirements
 from tensorflow.keras.models import Sequential
 
 df = pd.read_csv(r"y_sinx.csv")

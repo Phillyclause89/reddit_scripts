@@ -1,3 +1,4 @@
+# noinspection PyPackageRequirements
 import numpy as np
 
 print("No Seed initialization:")
