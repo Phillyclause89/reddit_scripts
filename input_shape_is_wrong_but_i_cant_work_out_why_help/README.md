@@ -10,7 +10,7 @@ MLing.py | ![GitHub file size in bytes](https://img.shields.io/github/size/Phill
 y_sinx.csv | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/input_shape_is_wrong_but_i_cant_work_out_why_help/y_sinx.csv?style=plastic) | CSV file for debugging OP's issue
   
 ## Source Link:
-  * [ r/learnpython/.../SOURCE_NAME ]( SOURCE_URL )
+  * [ r/learnpython/.../input_shape_is_wrong_but_i_cant_work_out_why_help/ ]( https://www.reddit.com/r/learnpython/comments/dz64kt/input_shape_is_wrong_but_i_cant_work_out_why_help/ )
   
 ## Post Title:
   Input shape is wrong but I can't work out why, help please?
