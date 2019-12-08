@@ -4,11 +4,11 @@ file0 = open(r"creditCards.txt", "r")
 while True:
     cardNum = file0.readline()
     print("raw", cardNum)
-    cardNum = cardNum.rstrip()
+    cardNum = cardNum.replace("-","").replace(" ", "").strip()
     print("striped", cardNum)
     print(len(cardNum))
     # Op's infinite loop can be broken by checking len(cardNum)
-    if len(cardNum):
+    if not len(cardNum):
         file0.close()
         break
 
@@ -45,15 +45,12 @@ else:
 
 try:
     file2 = open("creditCards.txt", "r")
-    S = SPyO(file2, globals())
-    print(S.attributes, S.obj_info())
 except FileNotFoundError:
     print("ERROR! Invalid File!")
 else:
     while True:
         cardNum = file2.readline()
-        cardNum = cardNum.rstrip()
-        SPyO(cardNum, globals()).obj_info()
+        cardNum = cardNum.replace("-","").replace(" ", "").strip()
         if len(cardNum) == 16:
             if cardNum[0] == str(4):
                 print("This card is a Visa, #" + str(cardNum))
@@ -61,9 +58,10 @@ else:
                 print("This card is a Mastercard, #" + str(cardNum))
             elif cardNum[0] == str(2):
                 print("This card is an American Express, #" + str(cardNum))
-        else:
-            print("Invalid Card.")
-        if len(cardNum):
+            else:
+                print("Invalid Card.")
+        if not len(cardNum):
             break
+    file2.close()
 
 
