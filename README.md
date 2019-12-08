@@ -1,7 +1,8 @@
 # reddit_scripts
  Collection of code from my adventures in [r/learnpython](https://www.reddit.com/r/learnpython/) or on python related discord channels.
  
-# The following directories' code stems from the following sources
+# Links
+ The following directories' code stems from the following sources:
   * [**Code_from_folks_on_discord**](https://github.com/Phillyclause89/reddit_scripts/tree/master/Code_from_folks_on_discord): 
      * The code in this folder is from random conversations with folks on discord.
   
