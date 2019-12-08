@@ -1,6 +1,6 @@
 import random
 
-from Code_from_folks_on_discord.elevie_game.eleven import Player, clear_screen
+from Code_from_folks_on_discord.eleven_game.eleven import Player, clear_screen
 
 
 class HumanPlayer(Player):
