@@ -7,9 +7,10 @@
       <excludeFolder url="file://$MODULE_DIR$/could_use_some_assistance_with_a_basic_python/venv" />
       <excludeFolder url="file://$MODULE_DIR$/input_shape_is_wrong_but_i_cant_work_out_why_help/venv" />
       <excludeFolder url="file://$MODULE_DIR$/is_there_a_way_to_set_the_seed_for_numpyrandom/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/looking_for_criticism_conways_game_of_life_in/venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.7 (reddit_scripts) (5)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (reddit_scripts) (6)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="R User Library" level="project" />
     <orderEntry type="library" name="R Skeletons" level="application" />

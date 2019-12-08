@@ -188,7 +188,7 @@ class GameOfLife:
 
 
 if __name__ == "__main__":
-    game = GameOfLife(420, "|  |", "|:P|")
+    game = GameOfLife(420, "\033[1;m|  |", "|\033[1;35m:P\033[1;m|")
     game.play()
 
     # Code from a Debug Tool I use when I write code

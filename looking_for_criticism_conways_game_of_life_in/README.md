@@ -4,11 +4,11 @@
 ## File Overview:
   File | SIZE | BRIEF
 --- | --- | ---
-README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=plastic) | README.md file for this adventure.
-requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/requirements.txt?style=plastic) | requirements.txt for this adventure.
+README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/looking_for_criticism_conways_game_of_life_in/README.md?style=plastic) | README.md file for this adventure.
+requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/looking_for_criticism_conways_game_of_life_in/requirements.txt?style=plastic) | requirements.txt for this adventure.
   
 ## Source Link:
-  * [ r/learnpython/.../SOURCE_NAME ]( SOURCE_URL )
+  * [ r/learnpython/.../looking_for_criticism_conways_game_of_life_in/ ]( https://www.reddit.com/r/learnpython/comments/e5ag24/looking_for_criticism_conways_game_of_life_in/ )
   
 ## Post Title:
   > Looking for criticism? Conway's Game of Life in Python
