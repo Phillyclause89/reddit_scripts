@@ -4,9 +4,9 @@
   TEXT
 
 ## File Overview:
-  Markdown | Less | Pretty
+  File | SIZE | BRIEF
 --- | --- | ---
-*Still* | `renders` | **nicely**
+README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=for-the-badge) | Template File for READMEs in this repo.
 1 | 2 | 3
   
 ## Source Link:
@@ -23,3 +23,24 @@
   
 ```
 
+
+# r/learnpython Helpdask Summary
+  TEXT
+
+## File Overview:
+  File | SIZE | BRIEF
+--- | --- | ---
+README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=for-the-badge) | Template File for READMEs in this repo.
+1 | 2 | 3
+  
+## Source Link:
+  * [ r/learnpython/.../SOURCE_NAME ]( SOURCE_URL )
+  
+## Post Title:
+  TEXT
+  
+## Post Body:
+  > TEXT
+
+## My Comment(s):
+  > TEXT
