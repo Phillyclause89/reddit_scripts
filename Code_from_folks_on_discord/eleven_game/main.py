@@ -1,6 +1,5 @@
 import random
-
-from Code_from_folks_on_discord.eleven_game.eleven import Player, clear_screen
+from eleven import Player, clear_screen, test_player
 
 
 class HumanPlayer(Player):
@@ -42,15 +41,22 @@ class ComputerPlayer2(ComputerPlayer):
 
 
 if __name__ == "__main__":
-    # import spyobject.SPyObject as SPY
-    from spyobject import SPyObject as SPY
+    print(help(test_player))
+    print(test_player(ComputerPlayer))
+    print(test_player(ComputerPlayer2))
 
-    # Assign our tested class to a variable
-    player_obj = ComputerPlayer2()
-    # Call our spy on that object assigned to the variable
-    SPY(player_obj, globals()).obj_info()
-    # used the .get_move() method to return its output to another variable
-    move = player_obj.get_move()
-    # now spy that variable to see what it has returned
-    SPY(move, globals()).obj_info()
-    print(SPY(player_obj, globals()).attributes)
+    HumanPlayer().play()
+
+    # Code from showing the student how to us SPyObject to test their code
+    # # import spyobject.SPyObject as SPY
+    # from spyobject import SPyObject as SPY
+    #
+    # # Assign our tested class to a variable
+    # player_obj = ComputerPlayer2()
+    # # Call our spy on that object assigned to the variable
+    # SPY(player_obj, globals()).obj_info()
+    # # used the .get_move() method to return its output to another variable
+    # move = player_obj.get_move()
+    # # now spy that variable to see what it has returned
+    # SPY(move, globals()).obj_info()
+    # print(SPY(player_obj, globals()).attributes)
