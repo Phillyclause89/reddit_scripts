@@ -6,7 +6,7 @@
 ## File Overview:
   File | SIZE | BRIEF
 --- | --- | ---
-README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=plastic) | Template File for READMEs in this repo.
+README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=plastic) | README.md file for this adventure.
 1 | 2 | 3
   
 ## Source Link:
