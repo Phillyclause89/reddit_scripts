@@ -1,10 +1,10 @@
 import random
-from eleven import Player, clear_screen, test_player
+import eleven
 
 
-class HumanPlayer(Player):
+class HumanPlayer(eleven.Player):
     def get_move(self):
-        clear_screen()
+        eleven.clear_screen()
         print(self.board, self.score)
 
         while True:
@@ -23,12 +23,12 @@ class HumanPlayer(Player):
         print(self.board, self.score)
 
 
-class ComputerPlayer(Player):
+class ComputerPlayer(eleven.Player):
     def get_move(self):
         return random.choice(self.board.valid_moves())
 
 
-class ComputerPlayer2(ComputerPlayer):
+class ComputerPlayer2(eleven.Player):
     def get_move(self):
         moves = {}
         for move in self.board.valid_moves():
@@ -41,9 +41,11 @@ class ComputerPlayer2(ComputerPlayer):
 
 
 if __name__ == "__main__":
-    print(help(test_player))
-    print(test_player(ComputerPlayer))
-    print(test_player(ComputerPlayer2))
+    print(help(eleven.test_player))
+    # noinspection PyTypeChecker
+    print(eleven.test_player(ComputerPlayer))
+    # noinspection PyTypeChecker
+    print(eleven.test_player(ComputerPlayer2))
 
     HumanPlayer().play()
 
