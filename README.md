@@ -1,5 +1,6 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/Phillyclause89/reddit_scripts?style=plastic)
 # reddit_scripts
- Collection of code from my adventures in [r/learnpython](https://www.reddit.com/r/learnpython/) or on python related discord channels.
+ Collection of code from my adventures in [r/learnpython](https://www.reddit.com/r/learnpython/) or in python related discord channels.
  
 # Links
  The following directories' code stems from the following sources:
