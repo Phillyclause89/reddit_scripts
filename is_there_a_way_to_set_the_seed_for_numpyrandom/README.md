@@ -18,7 +18,7 @@ randomness.py | ![GitHub file size in bytes](https://img.shields.io/github/size/
   > If there isn't that's fine, I just don't want to look like an idiot if I reset the RNG seed every time I call it (which is a lot in this application)
   > Thank you!
 
-## My Comment(s):
+### My Comment(s):
   > [https://docs.scipy.org/doc/numpy-1.15.0/reference/generated/numpy.random.seed.html](https://docs.scipy.org/doc/numpy-1.15.0/reference/generated/numpy.random.seed.html)
   > ```Python
   >  import numpy as np
@@ -110,7 +110,7 @@ randomness.py | ![GitHub file size in bytes](https://img.shields.io/github/size/
   > >random roll: 5
   >
   > Remember a game is always looping. You can do powerful things with random generators and seed values to load a specific states without heavy savefile overhead. it's how games like minecraft and No Man's Sky load huge worlds with little overhead. BUT you must be careful where you initialize your seed value in relation to your game loops. play around with this script i just wrote to show how seeds work inside and outside a loop.
-  ### OP Follow up Comment:
+  #### OP Follow up Comment:
   > Thanks for the response! Right, I guess my question is, is it possible to set the seed of the RNG once that so every time you call the RNG it uses that seed like is done in a inner seed init for loop? It seems like there is not
   #### My Response:
   > I'm confused my what you want here?  Can you show some code of how you want to use the seed?
