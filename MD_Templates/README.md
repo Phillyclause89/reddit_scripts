@@ -1,13 +1,13 @@
 ```MarkDown
 
-# r/learnpython Helpdask Summary
+# r/learnpython Adventure Summary
   TEXT
 
 ## File Overview:
   File | SIZE | BRIEF
 --- | --- | ---
 README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=plastic) | README.md file for this adventure.
-1 | 2 | 3
+requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/requirements.txt?style=plastic) | requirements.txt for this adventure.
   
 ## Source Link:
   * [ r/learnpython/.../SOURCE_NAME ]( SOURCE_URL )
@@ -24,14 +24,14 @@ README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phil
 ```
 
 
-# r/learnpython Helpdask Summary
+# r/learnpython Adventure Summary
   TEXT
 
 ## File Overview:
   File | SIZE | BRIEF
 --- | --- | ---
 README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=plastic) | README.md file for this adventure.
-1 | 2 | 3
+requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/requirements.txt?style=plastic) | requirements.txt for this adventure.
   
 ## Source Link:
   * [ r/learnpython/.../SOURCE_NAME ]( SOURCE_URL )
