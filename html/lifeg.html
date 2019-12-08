@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.7.2" />
+<title>lifeg API documentation</title>
+<meta name="description" content="Conway&#39;s Game of Life in Python …" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>lifeg</code></h1>
+</header>
+<section id="section-intro">
+<p>Conway's Game of Life in Python</p>
+<h2 id="authors">Authors</h2>
+<p>by u/mathnoob19</p>
+<p>Objectified by Phillyclause89</p>
+<h2 id="sauces">Sauces</h2>
+<p><a href="https://www.reddit.com/r/learnpython/comments/e5ag24/looking_for_criticism_conways_game_of_life_in/">https://www.reddit.com/r/learnpython/comments/e5ag24/looking_for_criticism_conways_game_of_life_in/</a></p>
+<p><a href="https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html">https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html</a></p>
+<h2 id="todo">Todo</h2>
+<ul>
+<li>For module TODOs</li>
+<li>You have to also use <code>sphinx.ext.todo</code> extension
+.. _Google Python Style Guide:
+<a href="http://google.github.io/styleguide/pyguide.html">http://google.github.io/styleguide/pyguide.html</a></li>
+</ul>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">#!/usr/bin/env python
+&#34;&#34;&#34;Conway&#39;s Game of Life in Python
+
+Authors:
+    by u/mathnoob19
+
+    Objectified by Phillyclause89
+
+Sauces:
+    https://www.reddit.com/r/learnpython/comments/e5ag24/looking_for_criticism_conways_game_of_life_in/
+
+    https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
+
+Todo:
+    * For module TODOs
+    * You have to also use ``sphinx.ext.todo`` extension
+
+.. _Google Python Style Guide:
+   http://google.github.io/styleguide/pyguide.html
+
+&#34;&#34;&#34;
+
+import time
+import random
+import subprocess
+
+
+class GameOfLife:
+    &#34;&#34;&#34;
+    GameOfLife
+    Class for simulating the game of life by John Horton Conway
+
+    Attributes:
+        GameOfLife.markers (:obj:&#39;dict&#39;): Dictionary of game markers {0: dead_marker, 1: alive_marker} .
+
+        GameOfLife.turn (:obj:`int`): Current turn the game instance is on.
+
+        GameOfLife.max_turns (:obj:`int`): Maximum turns the game will play
+
+        GameOfLife.grid (:obj:`list`): 2D list of integers (0=DEAD, 1=Alive) representing the game board
+
+    &#34;&#34;&#34;
+
+    def __init__(self, max_turns=100, dead_marker=&#34;█&#34;, alive_marker=&#34;X&#34;):
+        &#34;&#34;&#34;
+        GameOfLife(self, max_turns=100, dead_marker=&#34;█&#34;, alive_marker=&#34;X&#34;)
+
+        Initializes the GameOfLife class object to new game values
+
+        Note:
+            GameOfLife.turn and
+
+        :param max_turns:    int    default: 100  (Maximum number of game turns to be played)
+
+        :param dead_marker:  string default: &#34;█&#34; (Character(s) used for the dead squares when visualizing the board)
+
+        :param alive_marker: string default: &#34;X&#34;  (Character(s) to be used for the living squares)
+
+        &#34;&#34;&#34;
+
+        self.markers = {
+            0: dead_marker,
+            1: alive_marker}
+        self.turn = 0
+        self.max_turns = max_turns
+        self.grid = self.generate_grid()
+
+    @staticmethod
+    def generate_grid():
+        &#34;&#34;&#34;
+        @staticmethod
+
+        GameOfLife.generate_grid():
+
+        Creates the initial grid configuration during init method
+
+        Note:
+            Keep hard coded: population=[1, 0]
+
+        :return: :obj:`list` of :obj:`int`:
+
+        Todo:
+            * Could turn weights and k and max range() values to attributes inited by __init__() params
+
+        &#34;&#34;&#34;
+
+        return [random.choices(population=[1, 0], weights=[0.1, 0.9], k=50) for y in range(0, 50)]
+
+    def cell_update(self):
+        &#34;&#34;&#34;
+        GameOfLife.cell_update():
+
+        Updates the grid for each time step.
+
+        Rules for updating the grid:
+
+           1. Any live cell with two or three neighbors survives.
+           2. Any dead cell with three live neighbors becomes a live cell.
+           3. All other live cells die in the next generation. Similarly, all other dead cells stay dead.
+
+        :return: &lt;class &#39;NoneType&#39;&gt;
+
+        &#34;&#34;&#34;
+
+        bounds_y = len(self.grid[0])
+        bounds_x = len(self.grid)
+
+        # Iterate over each cell
+        for x in range(0, len(self.grid)):
+            for y in range(0, len(self.grid[0])):
+                # For each cell, calculate the number of its live neighbors:
+                neighbors = sum((
+                    self.grid[x][(y + 1) % bounds_y],
+                    self.grid[x][(y - 1) % bounds_y],
+                    self.grid[(x + 1) % bounds_x][y],
+                    self.grid[(x - 1) % bounds_x][y],
+                    self.grid[(x + 1) % bounds_x][(y + 1) % bounds_y],
+                    self.grid[(x + 1) % bounds_x][(y - 1) % bounds_y],
+                    self.grid[(x - 1) % bounds_x][(y + 1) % bounds_y],
+                    self.grid[(x - 1) % bounds_x][(y - 1) % bounds_y]))
+                # If the cell is alive and has 2-3 neighbors then leave it alone
+                # If the cell is dead and has three neighbors then it becomes alive
+                if not (neighbors == 2 or neighbors == 3):
+                    self.grid[x][y] = 0
+                elif neighbors == 3 and self.grid[x][y] == 0:
+                    self.grid[x][y] = 1
+
+    def convert_to_string(self, x):
+        &#34;&#34;&#34;
+        GameOfLife.convert_to_string(self, x):
+
+        :param x: value to compare;
+
+        :return: str (marker to be used for visualizing square on board
+
+        &#34;&#34;&#34;
+
+        return self.markers[0] if x == 0 else self.markers[1]
+
+    def grid_display(self):
+        &#34;&#34;&#34;
+        GameOfLife.grid_display():
+
+        Formats and displays the grid!
+
+        &#34;&#34;&#34;
+
+        display = &#39;&#39;
+        for x in range(0, len(self.grid)):
+            display += f&#34;{&#39;&#39;.join(list(map(self.convert_to_string, self.grid[x])))}\n&#34;
+        print(display)
+
+    def play(self, pause=0.5, show=True):
+        &#34;&#34;&#34;
+        GameOfLife.play(self, show=True, pause=0.5)
+
+        :param pause: int or float (how long to show the board)
+        
+        :param show: boolean (Print board to console)
+
+        :return: &lt;class &#39;NoneType&#39;&gt;
+
+        &#34;&#34;&#34;
+
+        while self.turn &lt; self.max_turns:
+            if show:
+                subprocess.call(&#39;cls||clear&#39;, shell=True)
+                self.grid_display()
+                time.sleep(pause)
+            self.cell_update()
+            self.turn += 1
+        self.reset_game()
+
+    def reset_game(self, new_max_turns=None):
+        &#34;&#34;&#34;
+        reset_game(self, new_max_turns=None)
+
+        :param new_max_turns: None or int use to set new max turns
+
+        :return: &lt;class &#39;NoneType&#39;&gt;
+
+        &#34;&#34;&#34;
+
+        self.turn = 0
+        self.grid = self.generate_grid()
+        if new_max_turns:
+            self.max_turns = new_max_turns
+
+
+if __name__ == &#34;__main__&#34;:
+    game = GameOfLife(420, &#34;|  |&#34;, &#34;|:P|&#34;)
+    game.play()
+
+
+    # Code from a Debug Tool I use when I write code
+    # Available https://github.com/Phillyclause89/SPyObject
+    &#34;&#34;&#34; 
+    from spyobject import SPyObject as SPy
+    game = GameOfLife()
+    SPy(game, globals()).obj_info()
+    SPy(game.play(), globals()).obj_info()
+    SPy(game.cell_update(), globals()).obj_info()
+    SPy(game.generate_grid(), globals()).obj_info()
+    SPy(game.convert_to_string(1), globals()).obj_info()
+    SPy(game.convert_to_string(0), globals()).obj_info()
+    SPy(game.grid_display(), globals()).obj_info()
+    &#34;&#34;&#34;</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="lifeg.GameOfLife"><code class="flex name class">
+<span>class <span class="ident">GameOfLife</span></span>
+<span>(</span><span>max_turns=100, dead_marker='█', alive_marker='X')</span>
+</code></dt>
+<dd>
+<section class="desc"><p>GameOfLife
+Class for simulating the game of life by John Horton Conway</p>
+<h2 id="attributes">Attributes</h2>
+<p>GameOfLife.markers (:obj:'dict'): Dictionary of game markers {0: dead_marker, 1: alive_marker} .</p>
+<p>GameOfLife.turn (:obj:<code>int</code>): Current turn the game instance is on.</p>
+<p>GameOfLife.max_turns (:obj:<code>int</code>): Maximum turns the game will play</p>
+<p>GameOfLife.grid (:obj:<code>list</code>): 2D list of integers (0=DEAD, 1=Alive) representing the game board
+GameOfLife(self, max_turns=100, dead_marker="█", alive_marker="X")</p>
+<p>Initializes the GameOfLife class object to new game values</p>
+<h2 id="note">Note</h2>
+<p>GameOfLife.turn and
+:param max_turns:
+int
+default: 100
+(Maximum number of game turns to be played)</p>
+<p>:param dead_marker:
+string default: "█" (Character(s) used for the dead squares when visualizing the board)</p>
+<p>:param alive_marker: string default: "X"
+(Character(s) to be used for the living squares)</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class GameOfLife:
+    &#34;&#34;&#34;
+    GameOfLife
+    Class for simulating the game of life by John Horton Conway
+
+    Attributes:
+        GameOfLife.markers (:obj:&#39;dict&#39;): Dictionary of game markers {0: dead_marker, 1: alive_marker} .
+
+        GameOfLife.turn (:obj:`int`): Current turn the game instance is on.
+
+        GameOfLife.max_turns (:obj:`int`): Maximum turns the game will play
+
+        GameOfLife.grid (:obj:`list`): 2D list of integers (0=DEAD, 1=Alive) representing the game board
+
+    &#34;&#34;&#34;
+
+    def __init__(self, max_turns=100, dead_marker=&#34;█&#34;, alive_marker=&#34;X&#34;):
+        &#34;&#34;&#34;
+        GameOfLife(self, max_turns=100, dead_marker=&#34;█&#34;, alive_marker=&#34;X&#34;)
+
+        Initializes the GameOfLife class object to new game values
+
+        Note:
+            GameOfLife.turn and
+
+        :param max_turns:    int    default: 100  (Maximum number of game turns to be played)
+
+        :param dead_marker:  string default: &#34;█&#34; (Character(s) used for the dead squares when visualizing the board)
+
+        :param alive_marker: string default: &#34;X&#34;  (Character(s) to be used for the living squares)
+
+        &#34;&#34;&#34;
+
+        self.markers = {
+            0: dead_marker,
+            1: alive_marker}
+        self.turn = 0
+        self.max_turns = max_turns
+        self.grid = self.generate_grid()
+
+    @staticmethod
+    def generate_grid():
+        &#34;&#34;&#34;
+        @staticmethod
+
+        GameOfLife.generate_grid():
+
+        Creates the initial grid configuration during init method
+
+        Note:
+            Keep hard coded: population=[1, 0]
+
+        :return: :obj:`list` of :obj:`int`:
+
+        Todo:
+            * Could turn weights and k and max range() values to attributes inited by __init__() params
+
+        &#34;&#34;&#34;
+
+        return [random.choices(population=[1, 0], weights=[0.1, 0.9], k=50) for y in range(0, 50)]
+
+    def cell_update(self):
+        &#34;&#34;&#34;
+        GameOfLife.cell_update():
+
+        Updates the grid for each time step.
+
+        Rules for updating the grid:
+
+           1. Any live cell with two or three neighbors survives.
+           2. Any dead cell with three live neighbors becomes a live cell.
+           3. All other live cells die in the next generation. Similarly, all other dead cells stay dead.
+
+        :return: &lt;class &#39;NoneType&#39;&gt;
+
+        &#34;&#34;&#34;
+
+        bounds_y = len(self.grid[0])
+        bounds_x = len(self.grid)
+
+        # Iterate over each cell
+        for x in range(0, len(self.grid)):
+            for y in range(0, len(self.grid[0])):
+                # For each cell, calculate the number of its live neighbors:
+                neighbors = sum((
+                    self.grid[x][(y + 1) % bounds_y],
+                    self.grid[x][(y - 1) % bounds_y],
+                    self.grid[(x + 1) % bounds_x][y],
+                    self.grid[(x - 1) % bounds_x][y],
+                    self.grid[(x + 1) % bounds_x][(y + 1) % bounds_y],
+                    self.grid[(x + 1) % bounds_x][(y - 1) % bounds_y],
+                    self.grid[(x - 1) % bounds_x][(y + 1) % bounds_y],
+                    self.grid[(x - 1) % bounds_x][(y - 1) % bounds_y]))
+                # If the cell is alive and has 2-3 neighbors then leave it alone
+                # If the cell is dead and has three neighbors then it becomes alive
+                if not (neighbors == 2 or neighbors == 3):
+                    self.grid[x][y] = 0
+                elif neighbors == 3 and self.grid[x][y] == 0:
+                    self.grid[x][y] = 1
+
+    def convert_to_string(self, x):
+        &#34;&#34;&#34;
+        GameOfLife.convert_to_string(self, x):
+
+        :param x: value to compare;
+
+        :return: str (marker to be used for visualizing square on board
+
+        &#34;&#34;&#34;
+
+        return self.markers[0] if x == 0 else self.markers[1]
+
+    def grid_display(self):
+        &#34;&#34;&#34;
+        GameOfLife.grid_display():
+
+        Formats and displays the grid!
+
+        &#34;&#34;&#34;
+
+        display = &#39;&#39;
+        for x in range(0, len(self.grid)):
+            display += f&#34;{&#39;&#39;.join(list(map(self.convert_to_string, self.grid[x])))}\n&#34;
+        print(display)
+
+    def play(self, pause=0.5, show=True):
+        &#34;&#34;&#34;
+        GameOfLife.play(self, show=True, pause=0.5)
+
+        :param pause: int or float (how long to show the board)
+        
+        :param show: boolean (Print board to console)
+
+        :return: &lt;class &#39;NoneType&#39;&gt;
+
+        &#34;&#34;&#34;
+
+        while self.turn &lt; self.max_turns:
+            if show:
+                subprocess.call(&#39;cls||clear&#39;, shell=True)
+                self.grid_display()
+                time.sleep(pause)
+            self.cell_update()
+            self.turn += 1
+        self.reset_game()
+
+    def reset_game(self, new_max_turns=None):
+        &#34;&#34;&#34;
+        reset_game(self, new_max_turns=None)
+
+        :param new_max_turns: None or int use to set new max turns
+
+        :return: &lt;class &#39;NoneType&#39;&gt;
+
+        &#34;&#34;&#34;
+
+        self.turn = 0
+        self.grid = self.generate_grid()
+        if new_max_turns:
+            self.max_turns = new_max_turns</code></pre>
+</details>
+<h3>Static methods</h3>
+<dl>
+<dt id="lifeg.GameOfLife.generate_grid"><code class="name flex">
+<span>def <span class="ident">generate_grid</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>@staticmethod</p>
+<p>GameOfLife.generate_grid():</p>
+<p>Creates the initial grid configuration during init method</p>
+<h2 id="note">Note</h2>
+<p>Keep hard coded: population=[1, 0]
+:return: :obj:<code>list</code> of :obj:<code>int</code>:</p>
+<h2 id="todo">Todo</h2>
+<ul>
+<li>Could turn weights and k and max range() values to attributes inited by <strong>init</strong>() params</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@staticmethod
+def generate_grid():
+    &#34;&#34;&#34;
+    @staticmethod
+
+    GameOfLife.generate_grid():
+
+    Creates the initial grid configuration during init method
+
+    Note:
+        Keep hard coded: population=[1, 0]
+
+    :return: :obj:`list` of :obj:`int`:
+
+    Todo:
+        * Could turn weights and k and max range() values to attributes inited by __init__() params
+
+    &#34;&#34;&#34;
+
+    return [random.choices(population=[1, 0], weights=[0.1, 0.9], k=50) for y in range(0, 50)]</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="lifeg.GameOfLife.cell_update"><code class="name flex">
+<span>def <span class="ident">cell_update</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>GameOfLife.cell_update():</p>
+<p>Updates the grid for each time step.</p>
+<p>Rules for updating the grid:</p>
+<ol>
+<li>Any live cell with two or three neighbors survives.</li>
+<li>Any dead cell with three live neighbors becomes a live cell.</li>
+<li>All other live cells die in the next generation. Similarly, all other dead cells stay dead.</li>
+</ol>
+<p>:return: <class 'NoneType'></p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def cell_update(self):
+    &#34;&#34;&#34;
+    GameOfLife.cell_update():
+
+    Updates the grid for each time step.
+
+    Rules for updating the grid:
+
+       1. Any live cell with two or three neighbors survives.
+       2. Any dead cell with three live neighbors becomes a live cell.
+       3. All other live cells die in the next generation. Similarly, all other dead cells stay dead.
+
+    :return: &lt;class &#39;NoneType&#39;&gt;
+
+    &#34;&#34;&#34;
+
+    bounds_y = len(self.grid[0])
+    bounds_x = len(self.grid)
+
+    # Iterate over each cell
+    for x in range(0, len(self.grid)):
+        for y in range(0, len(self.grid[0])):
+            # For each cell, calculate the number of its live neighbors:
+            neighbors = sum((
+                self.grid[x][(y + 1) % bounds_y],
+                self.grid[x][(y - 1) % bounds_y],
+                self.grid[(x + 1) % bounds_x][y],
+                self.grid[(x - 1) % bounds_x][y],
+                self.grid[(x + 1) % bounds_x][(y + 1) % bounds_y],
+                self.grid[(x + 1) % bounds_x][(y - 1) % bounds_y],
+                self.grid[(x - 1) % bounds_x][(y + 1) % bounds_y],
+                self.grid[(x - 1) % bounds_x][(y - 1) % bounds_y]))
+            # If the cell is alive and has 2-3 neighbors then leave it alone
+            # If the cell is dead and has three neighbors then it becomes alive
+            if not (neighbors == 2 or neighbors == 3):
+                self.grid[x][y] = 0
+            elif neighbors == 3 and self.grid[x][y] == 0:
+                self.grid[x][y] = 1</code></pre>
+</details>
+</dd>
+<dt id="lifeg.GameOfLife.convert_to_string"><code class="name flex">
+<span>def <span class="ident">convert_to_string</span></span>(<span>self, x)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>GameOfLife.convert_to_string(self, x):</p>
+<p>:param x: value to compare;</p>
+<p>:return: str (marker to be used for visualizing square on board</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def convert_to_string(self, x):
+    &#34;&#34;&#34;
+    GameOfLife.convert_to_string(self, x):
+
+    :param x: value to compare;
+
+    :return: str (marker to be used for visualizing square on board
+
+    &#34;&#34;&#34;
+
+    return self.markers[0] if x == 0 else self.markers[1]</code></pre>
+</details>
+</dd>
+<dt id="lifeg.GameOfLife.grid_display"><code class="name flex">
+<span>def <span class="ident">grid_display</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>GameOfLife.grid_display():</p>
+<p>Formats and displays the grid!</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def grid_display(self):
+    &#34;&#34;&#34;
+    GameOfLife.grid_display():
+
+    Formats and displays the grid!
+
+    &#34;&#34;&#34;
+
+    display = &#39;&#39;
+    for x in range(0, len(self.grid)):
+        display += f&#34;{&#39;&#39;.join(list(map(self.convert_to_string, self.grid[x])))}\n&#34;
+    print(display)</code></pre>
+</details>
+</dd>
+<dt id="lifeg.GameOfLife.play"><code class="name flex">
+<span>def <span class="ident">play</span></span>(<span>self, pause=0.5, show=True)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>GameOfLife.play(self, show=True, pause=0.5)</p>
+<p>:param pause: int or float (how long to show the board)</p>
+<p>:param show: boolean (Print board to console)</p>
+<p>:return: <class 'NoneType'></p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def play(self, pause=0.5, show=True):
+    &#34;&#34;&#34;
+    GameOfLife.play(self, show=True, pause=0.5)
+
+    :param pause: int or float (how long to show the board)
+    
+    :param show: boolean (Print board to console)
+
+    :return: &lt;class &#39;NoneType&#39;&gt;
+
+    &#34;&#34;&#34;
+
+    while self.turn &lt; self.max_turns:
+        if show:
+            subprocess.call(&#39;cls||clear&#39;, shell=True)
+            self.grid_display()
+            time.sleep(pause)
+        self.cell_update()
+        self.turn += 1
+    self.reset_game()</code></pre>
+</details>
+</dd>
+<dt id="lifeg.GameOfLife.reset_game"><code class="name flex">
+<span>def <span class="ident">reset_game</span></span>(<span>self, new_max_turns=None)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>reset_game(self, new_max_turns=None)</p>
+<p>:param new_max_turns: None or int use to set new max turns</p>
+<p>:return: <class 'NoneType'></p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def reset_game(self, new_max_turns=None):
+    &#34;&#34;&#34;
+    reset_game(self, new_max_turns=None)
+
+    :param new_max_turns: None or int use to set new max turns
+
+    :return: &lt;class &#39;NoneType&#39;&gt;
+
+    &#34;&#34;&#34;
+
+    self.turn = 0
+    self.grid = self.generate_grid()
+    if new_max_turns:
+        self.max_turns = new_max_turns</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="lifeg.GameOfLife" href="#lifeg.GameOfLife">GameOfLife</a></code></h4>
+<ul class="two-column">
+<li><code><a title="lifeg.GameOfLife.cell_update" href="#lifeg.GameOfLife.cell_update">cell_update</a></code></li>
+<li><code><a title="lifeg.GameOfLife.convert_to_string" href="#lifeg.GameOfLife.convert_to_string">convert_to_string</a></code></li>
+<li><code><a title="lifeg.GameOfLife.generate_grid" href="#lifeg.GameOfLife.generate_grid">generate_grid</a></code></li>
+<li><code><a title="lifeg.GameOfLife.grid_display" href="#lifeg.GameOfLife.grid_display">grid_display</a></code></li>
+<li><code><a title="lifeg.GameOfLife.play" href="#lifeg.GameOfLife.play">play</a></code></li>
+<li><code><a title="lifeg.GameOfLife.reset_game" href="#lifeg.GameOfLife.reset_game">reset_game</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.2</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>
