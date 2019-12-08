@@ -6,7 +6,7 @@
 ## File Overview:
   File | SIZE | BRIEF
 --- | --- | ---
-README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=for-the-badge) | Template File for READMEs in this repo.
+README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=plastic) | Template File for READMEs in this repo.
 1 | 2 | 3
   
 ## Source Link:
@@ -30,7 +30,7 @@ README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phil
 ## File Overview:
   File | SIZE | BRIEF
 --- | --- | ---
-README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=for-the-badge) | Template File for READMEs in this repo.
+README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=plastic) | Template File for READMEs in this repo.
 1 | 2 | 3
   
 ## Source Link:
