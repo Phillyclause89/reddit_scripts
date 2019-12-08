@@ -30,4 +30,6 @@ requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/si
   > 
   > If you do them right, you can also use tools like  [pdoc](https://pdoc3.github.io/pdoc/)  to auto generate some of the [documentation](https://pste.eu/p/djNY.html) for your code.
   #### OP Follow up Comment:
+  > Interesting, and thank you! :) What advantage does a class-based approach offer in this case?
   #### My Response:
+  > The topic of the pros and cons of [programming paradigms ](https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms?wprov=sfti1) is highly debated and largely personal preference of the programmer. I thought using classes in this example would be fitting since your functions aren’t purely functional. Most are dependent on variables being initialized in the outer scope.   Programming this way isn’t really bad, so long as you are able too keep track of all your global references and are willing to except the fact that most of your functions are useless outside of the context your script. In one sense, your whole script is essentially being treated like a class. The only difference between my class and your script is that mine is a self contained object that can be imported and incorporated into other programs more easily.
