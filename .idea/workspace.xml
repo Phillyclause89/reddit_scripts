@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/frankensteinish_app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="884">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -58,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/app_tky.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="7" lean-forward="true" selection-end-line="2" selection-end-column="46" />
+              <caret line="1" column="7" selection-end-line="2" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -115,6 +115,9 @@
       <replace>RIGHT_GROUP_BY_COLUMNS</replace>
       <replace>KEEP_COLUMNS</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -178,6 +181,7 @@
     <option name="width" value="1940" />
     <option name="height" value="2111" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -198,6 +202,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -885,7 +890,7 @@
     <entry file="file://$PROJECT_DIR$/app_tky.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="7" lean-forward="true" selection-end-line="2" selection-end-column="46" />
+          <caret line="1" column="7" selection-end-line="2" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -902,7 +907,7 @@
     <entry file="file://$PROJECT_DIR$/frankensteinish_app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
