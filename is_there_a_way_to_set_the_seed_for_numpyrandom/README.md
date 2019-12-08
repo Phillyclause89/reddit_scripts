@@ -9,7 +9,7 @@ requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/si
 randomness.py | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/is_there_a_way_to_set_the_seed_for_numpyrandom/randomness.py?style=plastic) | A script showing how RNG is controlled by the seed.
   
 ## Source Link:
-  * [ r/learnpython/.../SOURCE_NAME ]( SOURCE_URL )
+  * [ r/learnpython/.../is_there_a_way_to_set_the_seed_for_numpyrandom ]( https://www.reddit.com/r/learnpython/comments/du4f22/is_there_a_way_to_set_the_seed_for_numpyrandom/ )
   
 ## Post Title:
   > Is there a way to set the seed for numpy.random for an entire script (aka not have to set it every time you call the RNG)?
