@@ -1,8 +1,20 @@
-# r/learnpython Helpdask Summary
+# r/learnpython Adventure Summary
+ TEXT
+
+## File Overview:
+  File | SIZE | BRIEF
+--- | --- | ---
+README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/could_use_some_assistance_with_a_basic_python/README.md?style=plastic) | README.md file for this adventure.
+requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/could_use_some_assistance_with_a_basic_python/requirements.txt?style=plastic) | requirements.txt for this adventure.
+inplis.py | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/could_use_some_assistance_with_a_basic_python/inplis.py?style=plastic) | This is the scratch file I used to play around with OP's Code
+creditCards.txt | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/could_use_some_assistance_with_a_basic_python/creditCards.txt?style=plastic) | Text file of fake CC numbers to test OP's code with
+
 ## Source Link:
   * [r/learnpython/.../could_use_some_assistance_with_a_basic_python/](https://www.reddit.com/r/learnpython/comments/e4tg67/could_use_some_assistance_with_a_basic_python/)
+
 ## Post Title:
   Could use some assistance with a basic python program
+
 ## Post Body:
   > Edit: Solved, thank you everyone!
   > 
