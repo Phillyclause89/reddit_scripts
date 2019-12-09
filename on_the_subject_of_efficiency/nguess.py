@@ -1,5 +1,4 @@
 from random import randint
-
 print("Pick a number from 1 to 100!\n\nMake sure to stay within range,\nor else...\n")
 num = randint(1, 100)
 guessed = []
