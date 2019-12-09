@@ -8,6 +8,7 @@
 --- | --- | ---
 README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=plastic) | README.md file for this adventure.
 requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/requirements.txt?style=plastic) | requirements.txt for this adventure.
+main.py| ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/main.py?style=plastic) | code for this adventure.
   
 ## Source Link:
   * [ r/learnpython/.../SOURCE_NAME ]( SOURCE_URL )
@@ -18,7 +19,7 @@ requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/si
 ## Post Body:
   > TEXT
 
-## My Comment(s):
+### My Comment(s):
   > TEXT
   
 ```
@@ -32,6 +33,7 @@ requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/si
 --- | --- | ---
 README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=plastic) | README.md file for this adventure.
 requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/requirements.txt?style=plastic) | requirements.txt for this adventure.
+main.py| ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/main.py?style=plastic) | code for this adventure.
   
 ## Source Link:
   * [ r/learnpython/.../SOURCE_NAME ]( SOURCE_URL )
@@ -42,5 +44,5 @@ requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/si
 ## Post Body:
   > TEXT
 
-## My Comment(s):
+### My Comment(s):
   > TEXT

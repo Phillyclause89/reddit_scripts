@@ -35,7 +35,7 @@ nguess.py | ![GitHub file size in bytes](https://img.shields.io/github/size/Phil
   > My count was off because I added a few things just to try and learn some things on my own. Other than that it is fairly similar to my original.
   > https://pastebin.com/XRx7mKGc
 
-## My Comment(s):
+### My Comment(s):
   > Here are a few things you could do to slim your line count down:
   > ```python
   > from random import randint

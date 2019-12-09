@@ -48,7 +48,7 @@ y_sinx.csv | ![GitHub file size in bytes](https://img.shields.io/github/size/Phi
   > ```
   
 
-## My Comment(s):
+### My Comment(s):
   > Sorry for it being like several hours instead of a few. My commute home from work is like 2 hours because Seattle. u/PyDenver is correct when he said:
   > 
   > > Your input shape is the number of features you are training on, i.e. the number of columns you are feeding as inputs. In your case your input shape would be 1.
