@@ -22,6 +22,7 @@ def nth_split_prime(n, debug=False):
         p += 2
     return split_primes[n - 1]
 ```
+  Did you know Split Prime #6757 is 222723253.
 
 ## File Overview:
   File | SIZE | BRIEF
