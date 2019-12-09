@@ -1,3 +1,4 @@
+# OP's second attempt https://pastebin.com/fWUe8KGA
 name = input("Name: \n")
 games_played = int(input("Games: \n"))
 volleyball_times = 0

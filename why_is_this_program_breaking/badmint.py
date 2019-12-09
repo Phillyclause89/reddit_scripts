@@ -1,3 +1,4 @@
+# Basically the source code from https://pastebin.com/R9xcMF9n
 name = input("What is your Name?\n")
 games_played = int(input("How many games do you want to play?\n"))
 winner = False
