@@ -1,3 +1,8 @@
+"""Author: u/baubleglue
+https://www.reddit.com/r/learnpython/comments/e5qw6m/suggestions_on_which_gui_toolkit_to_use/f9woz5p?utm_source=share&utm_medium=web2x
+
+"""
+
 from tkinter import Tk, Menu
 from tkinter import ttk
 from tkinter.filedialog import askopenfilename
