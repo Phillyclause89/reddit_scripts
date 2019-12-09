@@ -194,10 +194,12 @@ music_playlist.csv | ![GitHub file size in bytes](https://img.shields.io/github/
   > ```
 #### My Reply:
   > > the problem is that you can't easily share it with other people. In order to run your example I need to install dash (20M it can be more, but I have some of the packages installed). Then you need to start the server. User also need to be connected to internet (loading CSS) - it isn't the use case described in the question.
+  > 
   > The difficulty of sharing a dash app is dependent on the distribution method:
   > An externally hosted dash app does come with the user requirement that they be connected to the external host server (whether that be on the internet or a private network) and has additional hurdles for the developer during the deployment stage, but IMO it is the optimal UX for the end user as they just need a somewhat modern internet browser to use the app.
   > A locally running dash app transfers some of the set-up hurdles from the dev to the user, but setup flow can be automated by for example on windows using a .bat file that runs all the pip freeze > requirements.txt stuff. Setup time for them should only push 20min if their internet is really slow. I've tested the fresh set up flow on a venv for my other project which requires Dash, Pandas, Numpy and a few other libs and it only takes like 5 minutes max to get up and running (my home comcast service is about 300 Mbps down). Once all the requirements are installed, the user no longer requires the internet to run the script (even if you accidently leave stylesheet paths hard coded to the example URL, the app will still function without the css. it just won't be as stylish.) since the app will be accessible from a local http://127.0.0.1:8050/ URL. Launching this Dash based desktop app can be further automated using another .bat file that runs the cmd command to run the python script.
   > As for OPs use case:
+  > 
   > > I'd like to create a desktop app to do the following.
   > > 1) User gives the program an existing spreadsheet
   > > 2) Spreadsheet is then analyzed for occurrences of various problematic scenarios
