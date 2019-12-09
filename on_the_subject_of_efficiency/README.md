@@ -4,11 +4,12 @@
 ## File Overview:
   File | SIZE | BRIEF
 --- | --- | ---
-README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/README.md?style=plastic) | README.md file for this adventure.
-requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/MD_Templates/requirements.txt?style=plastic) | requirements.txt for this adventure.
+README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/on_the_subject_of_efficiency/README.md?style=plastic) | README.md file for this adventure.
+requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/on_the_subject_of_efficiency/requirements.txt?style=plastic) | requirements.txt for this adventure.
+nguess.py | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/on_the_subject_of_efficiency/nguess.py?style=plastic) | code for this adventure.
   
 ## Source Link:
-  * [ r/learnpython/.../SOURCE_NAME ]( SOURCE_URL )
+  * [ r/learnpython/.../on_the_subject_of_efficiency ]( https://www.reddit.com/r/learnpython/comments/dtpn9x/on_the_subject_of_efficiency/ )
   
 ## Post Title:
   > On the subject of: Efficiency
