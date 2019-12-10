@@ -9,7 +9,7 @@ requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/si
 main.py| ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/how_to_add_specific_values_from_a_dictionary/main.py?style=plastic) | code for this adventure.
   
 ## Source Link:
-  * [ r/learnpython/.../SOURCE_NAME ]( https://www.reddit.com/r/learnpython/comments/e8me3f/how_to_add_specific_values_from_a_dictionary/ )
+  * [ r/learnpython/.../how_to_add_specific_values_from_a_dictionary ]( https://www.reddit.com/r/learnpython/comments/e8me3f/how_to_add_specific_values_from_a_dictionary/ )
   
 ## Post Title:
   > How to add specific values from a dictionary together?
