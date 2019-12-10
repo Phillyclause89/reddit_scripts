@@ -34,6 +34,7 @@ def bring_window_to_top(window_name):
         """Adapted from: https://www.blog.pythonlibrary.org/2014/10/20/pywin32-how-to-bring-a-window-to-front/
 
         """
+        
         top_windows[hwnd] = win32gui.GetWindowText(hwnd)
 
     tw, expt = {}, True
