@@ -13,6 +13,9 @@
   * [**Mystry_Python_Theater**](https://github.com/Phillyclause89/reddit_scripts/tree/master/Mystry_Python_Theater): 
      * The code in this folder is from who knows where? I will do a better job of tracking sources going forward.
   
+  * [**how_to_add_specific_values_from_a_dictionary**](https://github.com/Phillyclause89/reddit_scripts/tree/master/how_to_add_specific_values_from_a_dictionary): 
+     * [r/learnpython/../how_to_add_specific_values_from_a_dictionary/](https://www.reddit.com/r/learnpython/comments/e8me3f/how_to_add_specific_values_from_a_dictionary/)
+  
   * [**could_use_some_assistance_with_a_basic_python**](https://github.com/Phillyclause89/reddit_scripts/tree/master/could_use_some_assistance_with_a_basic_python): 
      * [r/learnpython/../could_use_some_assistance_with_a_basic_python/](https://www.reddit.com/r/learnpython/comments/e4tg67/could_use_some_assistance_with_a_basic_python/)
   
