@@ -6,7 +6,6 @@ import keyboard
 import win32gui
 import win32con
 import time
-import win32com.client as win32
 
 
 
