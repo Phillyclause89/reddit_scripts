@@ -28,6 +28,8 @@ def bring_window_to_top(window_name):
 
     Returns: None
 
+    Raises: WindowNotFoundError(Exception) if window_name is not in the list
+
     """
 
     def window_dict_handler(hwnd, top_windows):
@@ -46,7 +48,7 @@ def bring_window_to_top(window_name):
             win32gui.SetForegroundWindow(handle)
             expt = False
     if expt:
-        raise WindowNotFoundError(f"'{window_name}' does not appear to be a window.")
+        raise WindowNotFoundError(f"'{window_name}' does not appear to be a window in: {[x for x in tw.values() if len(x) > 0]}")
 
 
 if __name__ == "__main__":
