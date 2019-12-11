@@ -48,7 +48,7 @@ def bring_window_to_top(window_name):
         # DEBUG
         top_windows[hwnd] = win32gui.GetWindowText(hwnd)
 
-    tw, expt = {}, True
+    tw = {}
     win32gui.EnumWindows(window_dict_handler, tw)
     tw = {i: str(x) for i, x in tw.items() if len(x) > 0}
     for handle in tw:
@@ -56,17 +56,22 @@ def bring_window_to_top(window_name):
             win32gui.ShowWindow(handle, win32con.SW_NORMAL)
             win32gui.BringWindowToTop(handle)
             win32gui.SetForegroundWindow(handle)
-            expt = False
-
-    if expt:
-        raise WindowNotFoundError(f"'{window_name}' does not appear to be a window name in: {tw}")
+            return None
+    raise WindowNotFoundError(f"WindowNotFoundError : '{window_name}' does not appear to be a window name in: {tw}")
 
 
 if __name__ == "__main__":
+    # Example require fresh window instances of Notepad and Command Prompt
     # Example call to program with the name "Untitled - Notepad" (windows default for new notepad instance) to top
     bring_window_to_top("Untitled - Notepad")
     # Safety sleep just in case our PC is slow to bring up the windowHello There!
     time.sleep(1)
     # Send our text into the window
     keyboard.write("Hello There!")
-    bring_window_to_top(r"CommandPrompt")
+    # Example with CMD
+    time.sleep(1)
+    bring_window_to_top(r"Command Prompt")
+    time.sleep(1)
+    keyboard.write("python\nimport this\n")
+
+
