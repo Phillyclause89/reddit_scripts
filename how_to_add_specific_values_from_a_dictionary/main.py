@@ -50,4 +50,22 @@ yearly_d = {  # Assign our new dict to a variable
     ) for year in monthly_d  # Make sure we define our year variable
 }  # Finally, don't forget to close our Dict
 
-print(yearly_d)
+# Part two of https://www.reddit.com/r/learnpython/comments/e8zwkw/how_to_combine_a_list_and_dictionary_together_in/
+
+donkeys_l = ['1961', '1962', '1963', '1964', '1965', '1966', '1967', '1968']
+elephants_l = ['1969', '1970', '1971', '1972', '1973', '1974', '1975', '1976']
+metrics_d = {'1961': '498717', '1962': '512935', '1963': '521229', '1964': '534660',
+             '1965': '556404', '1966': '583399', '1967': '597717', '1968': '615512',
+             '1969': '639418', '1970': '641864', '1971': '640888', '1972': '662275',
+             '1973': '692498', '1974': '705856', '1975': '683949', '1976': '708708',}
+
+donkeys_d, elephants_d = {}, {}
+
+for year in metrics_d:
+    if year in donkeys_l:
+        donkeys_d[year] = metrics_d[year]
+    elif year in elephants_l:
+        elephants_d[year] = metrics_d[year]
+
+print(donkeys_d, elephants_d )
+
