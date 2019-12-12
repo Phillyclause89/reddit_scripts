@@ -6,7 +6,7 @@
 --- | --- | ---
 README.md | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/target_specific_window/README.md?style=plastic) | README.md file for this adventure.
 requirements.txt | ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/target_specific_window/requirements.txt?style=plastic) | requirements.txt for this adventure.
-main.py| ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/target_specific_window/main.py?style=plastic) | code for this adventure.
+window_refocus.py| ![GitHub file size in bytes](https://img.shields.io/github/size/Phillyclause89/reddit_scripts/target_specific_window/window_refocus.py?style=plastic) | code for this adventure.
   
 ## Source Link:
   * [ r/learnpython/.../target_specific_window ]( https://www.reddit.com/r/learnpython/comments/e8u1b6/target_specific_window/ )
