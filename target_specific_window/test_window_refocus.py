@@ -10,9 +10,9 @@ class Test(TestCase):
 
         os.startfile(r"C:\WINDOWS\system32\notepad.exe")
         time.sleep(2)
-        os.startfile(r"C:\Users\palees\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt")
+        os.startfile(r"C:\WINDOWS\system32\cmd")
         time.sleep(2)
         window_refocus.focus_on_window("Untitled - Notepad")
         time.sleep(2)
-        window_refocus.focus_on_window("Command Prompt")
+        window_refocus.focus_on_window("C:\WINDOWS\system32\cmd.exe")
 
